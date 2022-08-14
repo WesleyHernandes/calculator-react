@@ -1,0 +1,35 @@
+.Icon{
+    width: 30px;
+}
+
+.Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    color: var(--text-dark-color);
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 4px 4px 15px 0px var(--shadow-dark-color), -4px -4px 15px 0px var(--shadow-light-color);
+    background-color: var(--main-bg-color);
+}
+
+.Button.Gradient{
+    color: #FFFFFF;
+    background: hsla(217, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );   
+}
+
+.Button.Medium{
+    width: 113px;
+}
+
+.Button:not(.Gradient):active{
+    box-shadow: inset 4px 4px 15px 0px var(--shadow-dark-color), inset -4px -4px 15px 0px var(--shadow-light-color);
+}

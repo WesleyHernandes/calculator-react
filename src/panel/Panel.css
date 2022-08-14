@@ -1,0 +1,20 @@
+.Panel{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+}
+
+.Panel .Buttons-Content{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 242px;
+    gap: 16px;
+}
+
+.Panel .Operators-Content{
+    display: flex;
+    flex-direction: column;
+    max-width: 70px;
+    gap: 16px;
+}
