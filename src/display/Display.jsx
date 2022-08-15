@@ -1,9 +1,12 @@
 import './Display.css'
 import React from "react"
 
-export default () => {
+const Display = props => {
     return(
         <div className="Display">
+            <span>{props.operation}</span>
         </div>
     )
 }
+
+export default Display

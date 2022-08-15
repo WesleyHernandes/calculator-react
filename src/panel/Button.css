@@ -33,3 +33,7 @@
 .Button:not(.Gradient):active{
     box-shadow: inset 4px 4px 15px 0px var(--shadow-dark-color), inset -4px -4px 15px 0px var(--shadow-light-color);
 }
+
+.Button.Gradient:active{
+    box-shadow: inset 4px 4px 15px 0px rgba(0,0,0,0.1), inset -4px -4px 15px 0px rgba(0,0,0,0.1);
+}

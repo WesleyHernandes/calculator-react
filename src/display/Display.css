@@ -1,9 +1,12 @@
 .Display{
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
     min-height: 50px;
     padding: 16px;
     padding: 10px;
+    color: var(--text-dark-color);
     border-radius: 10px;
     box-shadow: inset 4px 4px 15px 0px var(--shadow-dark-color), inset -4px -4px 15px 0px var(--shadow-light-color);
 }
