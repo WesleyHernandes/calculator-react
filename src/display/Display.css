@@ -8,6 +8,8 @@
     padding: 16px;
     padding: 10px;
     color: var(--text-dark-color);
+    font-size: 20px;
+    font-weight: 500;
     border-radius: 10px;
     box-shadow: inset 4px 4px 15px 0px var(--shadow-dark-color), inset -4px -4px 15px 0px var(--shadow-light-color);
 }
