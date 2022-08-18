@@ -26,8 +26,12 @@
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );   
 }
 
+.Button.Large{
+    width: 240px;
+}
+
 .Button.Medium{
-    width: 113px;
+    width: 156px;
 }
 
 .Button:not(.Gradient):active{

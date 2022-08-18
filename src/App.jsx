@@ -4,23 +4,41 @@ import React, { Component } from 'react'
 import Display from './display/Display'
 import Panel from './panel/Panel'
 
+const initialState = {
+  displayValue:'0',
+  clearDisplay: false,
+  operation: null,
+  values: [0,0],
+  current: 0
+}
+
 export default class App extends Component {
-  state = {
-    display: ""
+  state = { ...initialState }
+
+  clearMemory = () => {
+    this.setState({ ...initialState })
   }
 
-  setDisplay = (value) => {
-    this.setState({
-      display: `${this.state.display}${value}`
-    })
+  setOperation = (operation) => {
+    console.log(operation)
+  }
+
+  setDigit = (value) => {
+    if(value === '.' && this.state.displayValue.includes('.')){
+      return
+    }
   }
 
   render(){
     return (
       <div className="App">
         <div className="Calculator">
-          <Display operation={this.state.display} />
-          <Panel setDisplay={this.setDisplay} />
+          <Display value={this.state.displayValue} />
+          <Panel 
+            clearMemory={() => this.clearMemory()} 
+            setOperation={() => this.setOperation()} 
+            setDigit={() => this.setDigit()} 
+          />
         </div>
       </div>
     )

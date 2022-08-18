@@ -4,7 +4,7 @@ import React from "react"
 const Display = props => {
     return(
         <div className="Display">
-            <span>{props.operation}</span>
+            <span>{props.value}</span>
         </div>
     )
 }
