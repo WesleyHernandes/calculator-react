@@ -3,6 +3,7 @@
     --shadow-light-color: rgba(255,255,255,1);
     --shadow-dark-color: rgba(219,225,238,1);
     --text-dark-color: #000000;
+    --border-color: #EEEEEE;
 }
 
 *{
